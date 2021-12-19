@@ -38,7 +38,7 @@ function buttonListenersInit() {
   const optionGenerateBtn = document.querySelector(".quote-option-generate");
   optionGenerateBtn.addEventListener("click", (e) => {
     const quoteThemeElem = document.querySelector("#quote-theme");
-    if (quoteThemeElem.value < 1 || quoteThemeElem > 12) {
+    if (quoteThemeElem.value < 1 || quoteThemeElem.value > 12) {
       alert("Длина темы должна быть больше 1 и меньше 12.");
       return;
     }
